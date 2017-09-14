@@ -1,6 +1,6 @@
 {
     "name": "co-developers/twigniter",
-    "type": "codeigniter-library",
+    "type": "library",
     "license": "MIT",
     "description": "Librería de CodeIgniter 3 para utilizar Twig como motor de plantillas",
     "homepage": "http://co-developers.com",
@@ -17,7 +17,15 @@
     ],    
     "require": {
         "php": ">=7.0.0",
-        "composer/installers": "^1.0",
-        "twig/twig": "2.*"
-    }
+        "twig/twig": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CoDevelopers\\Twigniter\\Config\\": "config"
+        }
+    },    
+    "scripts": {
+        "post-update-cmd": "CoDevelopers\\Twigniter\\Config\\ComposerSetup::postUpdate",
+        "post-install-cmd": "CoDevelopers\\Twigniter\\Config\\ComposerSetup::postInstall"
+    }    
 }
