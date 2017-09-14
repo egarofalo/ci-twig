@@ -24,9 +24,9 @@ Para poder utilizar las funciones <code>site_url()</code>, <code>base_url()</cod
 # Extendiendo Twig
 - Para agregar funciones a Twig y que estén disponibles para utilizar en todos los templates se debe ejecutar <code>$this->twigniter->addFunction($name, $function)</code> donde el parámetro <code>$name</code> es el nombre de la función en Twig, y <code>$function</code> puede ser el nombre de una función nativa de PHP, el de un helper de CodeIgniter cargado previamente, o una función anónima.
 - Para agregar una variable global en Twig se debe ejecutar <code>$this->twigniter->addGlobar($name, $value)</code> donde <code>$name</code> es el nombre de la variable en Twig y <code>$value</code> es el valor de dicha variable.
-- Se recomienda extender Twig a través del hook <code>post_controller_constructor</code> para que las funciones y/o variables agregadas estén disponibles en todos los métodos de los controladores de su aplicación. Si desea extender Twig en un controlador especìfico, se recomienda hacerlo en el constructor de dicho controlador. Recuerde que para extender Twig a través del hook debe configurar la carga automática de la libreria.
+- Se recomienda extender Twig a través del hook <code>post_controller_constructor</code> para que las funciones y/o variables agregadas estén disponibles en todos los métodos de los controladores de su aplicación. Si desea extender Twig en un controlador específico, se recomienda hacerlo en el constructor de dicho controlador. Recuerde que para extender Twig a través del hook debe configurar la carga automática de la libreria.
 
 # Modo desarrollo y producción
-Twigniter utiliza la variable ENVIRONMENT de CodeIgniter para configurar Twig de la forma más óptima dependiendo del entorno en que se esté ejecutando.
+Twigniter utiliza la variable <code>ENVIRONMENT</code> de CodeIgniter para configurar Twig de la forma más óptima dependiendo del entorno en que se esté ejecutando.
 
 

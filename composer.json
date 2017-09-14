@@ -1,0 +1,22 @@
+{
+    "name": "co-developers/Twigniter",
+    "type": "codeigniter-library",
+    "license": "MIT",
+    "description": "Librería de CodeIgniter 3 para utilizar Twig como motor de plantillas",
+    "homepage": "http://co-developers.com",
+    "authors": [
+        {
+            "name": "Edgardo Garofalo",
+            "email": "egarofalo83@hotmail.com",
+            "homepage": "https://github.com/egarofalo",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "CodeIgniter", "CodeIgniter 3", "Twig"
+    ],    
+    "require": {
+        "php": ">=7.0.0",
+        "twig/twig": "2.*"
+    }
+}
