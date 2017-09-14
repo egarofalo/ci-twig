@@ -8,7 +8,7 @@ Descargue la librería desde el repositorio y copie el archivo Twigniter.php a l
 Para cargar la librería automaticamente, abra el archivo <code>application/config/autoload.php</code> y agregue la libreria al array <code>$autoload['libraries']</code>.
 
 # Utilizar el Form Helper de CodeIgniter en Twig
-Para poder utilizar las funciones <code>form_open()</code>, <code>form_close()</code>, <code>form_error()</cde>, <code>set_value()</code>, <code>set_select()</code>, <code>set_checkbox()</code>, <code>set_radio()</code> y <code>validation_errors()</code> del Form Helper, abra el archivo <code>application/config/autoload.php</code> y agregue al array <code>$autoload['helpers']</code> el string <code>'form'</code>.
+Para poder utilizar las funciones <code>form_open()</code>, <code>form_close()</code>, <code>form_error()</code>, <code>set_value()</code>, <code>set_select()</code>, <code>set_checkbox()</code>, <code>set_radio()</code> y <code>validation_errors()</code> del Form Helper, abra el archivo <code>application/config/autoload.php</code> y agregue al array <code>$autoload['helpers']</code> el string <code>'form'</code>.
 
 # Utilizar el URL Helper de CodeIgniter en Twig
 Para poder utilizar las funciones <code>site_url()</code>, <code>base_url()</code>, <code>current_url()</code> y <code>uri_string()</code> del URL Helper, abra el archivo <code>application/config/autoload.php</code> y agregue al array <code>$autoload['helpers']</code> el string <code>'url'</code>.
