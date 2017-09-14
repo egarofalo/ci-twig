@@ -1,5 +1,5 @@
 {
-    "name": "co-developers/Twigniter",
+    "name": "co-developers/twigniter",
     "type": "codeigniter-library",
     "license": "MIT",
     "description": "Librería de CodeIgniter 3 para utilizar Twig como motor de plantillas",
