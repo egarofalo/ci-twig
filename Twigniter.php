@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Twigniter {
 
     private $config;
-    private $functions_asis;
+    private $functions;
     private $functions_safe;
     private $twig;
 
@@ -62,7 +62,7 @@ class Twigniter {
      * Add global functions to use in templates
      */
     private function addFunctions() {     
-        foreach ($this->functions_asis as $function) {
+        foreach ($this->functions as $function) {
             if (function_exists($function)) {
                 $this->twig->addFunction(new \Twig_Function($function, $function));
             }
