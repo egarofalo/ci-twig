@@ -19,7 +19,9 @@ class Twigniter {
         // functions
         $this->functions = [
             'base_url',
-            'site_url'
+            'site_url',
+            'current_url',
+            'uri_string'
         ];
         // safe functions
         $this->functions_safe = [
