@@ -1,5 +1,5 @@
 {
-    "name": "co-developers/twigniter",
+    "name": "co-developers/ci-twig",
     "type": "codeigniter-library",
     "license": "MIT",
     "description": "Librería de CodeIgniter 3 para utilizar Twig como motor de plantillas",
@@ -19,5 +19,8 @@
         "php": ">=7.0.0",
         "composer/installers": "^1.0",
         "twig/twig": "^2.0"
+    },
+    "extra": {
+        "installer-name": "Twig"
     }
 }
