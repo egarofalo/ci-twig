@@ -16,7 +16,7 @@
         "CodeIgniter", "CodeIgniter 3", "Twig"
     ],    
     "require": {
-        "php": ">=7.0.0",
+        "php": "^7.0",
         "composer/installers": "^1.0",
         "twig/twig": "^2.0"
     },
