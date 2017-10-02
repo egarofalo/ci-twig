@@ -2,13 +2,10 @@
 Librería de CodeIgniter 3 para utilizar Twig como motor de plantillas.
 
 # Requisitos
-CI Twig necesita Twig 2.x, PHP 7.x y CodeIgniter 3.x para poder ser ejecutado.
+CI Twig necesita PHP >= 7.0 y CodeIgniter 3.x para poder ser ejecutado.
 
-# Instalación manual
-Descargue la librería desde el repositorio y copie el archivo Twig.php a la carpeta <code>application/libraries</code> de CodeIgniter.
-
-# Instalación con Composer
-Instale Composer en su equipo y luego ejecute el comando <code>composer require co-developers/ci-twig</code> dentro de la raíz de su proyecto en Codeigniter.
+# Instalación
+Instale Composer en su equipo y luego ejecute el comando <code>composer require co-developers/ci-twig v2.0.0-alpha.1</code> dentro de la raíz de su proyecto en Codeigniter.
 
 # Carga automática de la libreria
 Para cargar la librería automaticamente, abra el archivo <code>application/config/autoload.php</code> y agregue el string <code>'twig'</code> al array <code>$autoload['libraries']</code>.
@@ -31,5 +28,3 @@ Para poder utilizar las funciones <code>site_url()</code>, <code>base_url()</cod
 
 # Modo desarrollo y producción
 Ci Twig utiliza la variable <code>ENVIRONMENT</code> de CodeIgniter para configurar Twig de la forma más óptima dependiendo del entorno en que se esté ejecutando.
-
-
