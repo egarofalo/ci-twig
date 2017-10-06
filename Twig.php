@@ -38,7 +38,7 @@ class Twig {
     }
     
     /**
-     * 
+     * Create the Twig object and add CodeIgniter helpers to Twig
      */
     private function init() {
         $this->createTwig();
@@ -46,11 +46,11 @@ class Twig {
     }  
 
     /**
-     * Create the twig object if it not exists
+     * Create the twig object
      */
     private function createTwig() {
-        $this->loader = new \Twig_Loader_Filesystem($this->config['paths']);
-        $twig = new \Twig_Environment($this->loader, [
+        $loader = new \Twig_Loader_Filesystem($this->config['paths']);
+        $twig = new \Twig_Environment($loader, [
             'cache' => $this->config['cache'],
             'debug' => $this->config['debug']
         ]);
@@ -110,7 +110,6 @@ class Twig {
      * Return the twig instance
      */
     public function getTwig() {
-        $this->createTwig();
         return $this->twig;
     }
 
