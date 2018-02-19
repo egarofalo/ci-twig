@@ -87,7 +87,11 @@ class Twig {
      * Add a function to use in templates
      */
     public function addFunction($name, $function) {
-        $this->twig->addFunction(new \Twig_Function($name, $function));
+        if (is_callable($function)) {
+            $this->twig->addFunction(new \Twig_Function($name, $function));
+            return TRUE;
+        }
+        return FALSE;
     }
 
     /**
